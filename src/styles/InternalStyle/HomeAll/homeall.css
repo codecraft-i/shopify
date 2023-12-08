@@ -1,0 +1,61 @@
+.intro-carousel {
+    width: 100%;
+    height: auto;
+}
+.sliderSlickChild {
+    width: 100%;
+    height: 370px;
+    background: none;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 6%;
+}
+.mainSliderBar {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.sliderSlickChild > a > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.slick-dots > li {
+    transform: scale(2);
+    border-radius: 50%;
+}
+.slick-active > button::before {
+    background: #000;
+    transform: scale(0.4);
+    border-radius: 50%;
+}
+.button-iNl {
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+    background: linear-gradient(135deg, var(--ye-main-f), var(--ye-main-s));
+    color: var(--white);
+    border-radius: 50%;
+    padding: 2px 6px;
+    cursor: pointer;
+    transition: all .35s ease;
+}
+.button-iNl:hover {
+    transform: scale(1.1);
+}
+.button-iNl:active {
+    background: linear-gradient(135deg, var(--purple-ft), var(--main-color-f));
+}
+.button-iNl-left {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+.button-iNl-right {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+}

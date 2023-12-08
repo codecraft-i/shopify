@@ -1,0 +1,119 @@
+.mainLR-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    z-index: 300;
+    display: none;
+    pointer-events: none;
+}
+.loginRActive {
+    display: grid;
+    place-items: center;
+    pointer-events: all;
+}
+.login-r-active > .mainLR-box {
+    display: block;
+    pointer-events: all;
+}
+.login_r-box {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#registrationForm {
+    position: relative;
+}
+#registrationForm > label {
+    margin-top: 15px;
+    display: block;
+    color: #666;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#registrationForm > input {
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+#registrationForm > input:focus {
+    border-color: #999;
+}
+
+#registrationForm > button {
+    margin-top: 20px;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--purple-ft), var(--main-color-f));
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#registrationForm > button:hover {
+    opacity: 80%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#phoneNumber {
+    position: relative;
+    padding-left: 65px !important;
+}
+#registrationForm::before {
+    content: '+998';
+    position: absolute;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 500;
+    top: 48px;
+    z-index: 300;
+    left: 10px;
+}
+
+.exit-r-l {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    font-size: 1.45rem;
+    transform: rotate(45deg);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    display: grid;
+    place-items: center;
+    transition: all .35s ease;
+    color: #000;
+}
+.exit-r-l:hover {
+    background: rgba(0, 0, 0, 0.1);
+}

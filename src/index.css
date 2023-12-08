@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --main-color-f: #E100FF;
+  --main-color-s: #800080;
+  --primary-main: ;
+  --white: #fff;
+  --whi-p: #f5f5f5;
+  --purple-ft: #8E2DE2;
+  --blue: #4A00E0;
+  --neuromancer: #f953c6;
+  --purple-ey: #41295a;
+  --ye-o-f: #F2994A;
+  --ye-o-s: #F2C94C;
+  --ye-main-f: #F7971E;
+  --ye-main-s: #FFD200;
+  --ye-h-color: #E44D26;
+  --red-p-color: #ff5e62;
+  --dark-f: #20002c;
+  --dark-s: #000;
+
+  /* Extra */
+
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+
+  /**
+   * typography
+   */
+
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /**
+   * border-radius
+   */
+
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+
+  /**
+   * transition 
+   */
+
+  --transition-timing: 0.2s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: var(--white);
+  height: auto;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-f);
+}
+
+.internal-container {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* @media (max-width: 2000px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+  .main-container {
+    width: 1620px;
+  }
+} */

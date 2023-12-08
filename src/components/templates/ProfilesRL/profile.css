@@ -1,0 +1,168 @@
+.profile-container {
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+}
+
+.pro-header {
+    width: 100%;
+    height: 90px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#logo-c-pf > img {
+    width: auto;
+    height: 40px !important;
+    background-size: cover;
+}
+
+
+.pro-nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-nav > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .25s ease;
+    color: var(--dark-s);
+}
+.proNavListIcon {
+    font-size: 1.5rem;
+    color: var(--purple-ft);
+    margin: 0 0 5px 0;
+    transition: all .25s ease;
+}
+
+.pro_navList.active {
+    color: var(--ye-main-f);
+}
+
+.pro_navList.active > .proNavListIcon {
+    color: var(--purple-ft);
+}
+
+.pro-nav > a:hover,
+.pro-nav > a:hover > .proNavListIcon {
+    color: var(--ye-main-f);
+}
+
+.profile-m-box {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.profile-m-but {
+    font-size: 2rem;
+    color: var(--ye-main-f);
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.profile-m-but:hover {
+    opacity: 80%;
+}
+
+.profile-m-but-box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0 0 0 / 3%);
+    display: none;
+    pointer-events: none;
+}
+.profile-m-but-box > a {
+    width: 100%;
+    height: auto;
+    transition: all .25s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--dark-s);
+
+}
+.profile-m-but-box > a:hover {
+    opacity: 50%;
+}
+
+.profile-m-but-box.profileMButBoxActive {
+    display: flex;
+    pointer-events: all;
+}
+
+.res-nav-bot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0 0 0 / 5%);
+    display: none;
+    pointer-events: none;
+}
+.res-nav-bot > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.res-nav-bot > a > .proNavListIcon {
+    margin: 0 5px 0;
+}
+.res-nav-bot.active > a > .proNavListIcon {
+    color: var(--ye-main-f);
+    margin: 0 5px 0;
+}
+
+
+
+@media (max-width: 750px) {
+    .pro-nav {
+        display: none;
+        pointer-events: none;
+    }
+    .res-nav-bot {
+        display: flex;
+        pointer-events: all;
+    }
+}
+
+@media (max-width: 540px) {
+    .res-nav-bot > a {
+        transform: scale(0.8);
+    }
+}
+
+.pro-content {
+    background: #fff;
+}

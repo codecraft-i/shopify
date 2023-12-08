@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?yuqmn5');
+  src:  url('../fonts/icomoon.eot?yuqmn5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?yuqmn5') format('truetype'),
+    url('../fonts/icomoon.woff?yuqmn5') format('woff'),
+    url('../fonts/icomoon.svg?yuqmn5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Uzum';
+  src:  url('../fonts/TT_Uzum_ExtraBold.eot') format('embedded-opentype'),
+    url('../fonts/TT Uzum ExtraBold.ttf') format('truetype'),
+    url('../fonts/TT_Uzum_ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Uzum';
+  src:  url('../fonts/TT_Uzum_Medium.eot') format('embedded-opentype'),
+    url('../fonts/TT Uzum Medium.ttf') format('truetype'),
+    url('../fonts/TT_Uzum_Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Uzum';
+  src:  url('../fonts/TT_Uzum_Bold.eot') format('embedded-opentype'),
+    url('../fonts/TT Uzum Bold.ttf') format('truetype'),
+    url('../fonts/TT_Uzum_Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-right:before {
+  content: "\e904";
+}
+.icon-account:before {
+  content: "\e900";
+}
+.icon-book-open:before {
+  content: "\e901";
+}
+.icon-chart-bar:before {
+  content: "\e902";
+}
+.icon-store:before {
+  content: "\e903";
+}
